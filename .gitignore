@@ -1,0 +1,11 @@
+.DS_Store
+.springBeans
+.classpath
+.project
+.settings
+api-gateway/
+eureka-server/
+payment-history-service/
+payment-service/
+push-notification/
+phpmyadmin/

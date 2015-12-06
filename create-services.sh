@@ -19,4 +19,4 @@ cf create-service p-mysql 100mb-dev consumer-messaging-db
 cf create-service p-mysql 100mb-dev payment-service-db
 
 # Create the auto-scaler gold service
-cf create-service app-autoscaler gold scale-gold
+#cf create-service app-autoscaler gold scale-gold

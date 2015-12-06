@@ -43,6 +43,12 @@ cd "$CURRENT_DIR/push-notification"
 mvn clean package -Dmaven.test.skip=$SKIP_TESTS
 cf push
 
+echo "Deploying MySQL consoles for each database"
+cd "$CURRENT_DIR/phpmyadmin"
+cf push -f manifest-consumer.yml
+cf push -f manifest-pay-hist.yml
+cf push -f manifest-pay.yml
+
 cd "$CURRENT_DIR"
 
 echo "***********************"
